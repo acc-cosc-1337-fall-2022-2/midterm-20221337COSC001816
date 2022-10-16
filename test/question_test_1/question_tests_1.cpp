@@ -10,3 +10,11 @@ TEST_CASE("test")
 {
 	REQUIRE(test_config() == true);
 }
+
+TEST_CASE("Get Cookies") 
+{
+	REQUIRE(get_cookie_ingredients(48) == "1.5, 1, 2.75");
+	REQUIRE(get_cookie_ingredients(96) == "3, 2, 5.5");
+	REQUIRE(get_cookie_ingredients(24) == ".75, .5, 1.375");
+
+}
